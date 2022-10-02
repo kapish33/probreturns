@@ -1,3 +1,4 @@
+import House from '../assets/house.jpg';
 export const cardData = [
   {
     topButtons: [
@@ -15,8 +16,7 @@ export const cardData = [
     price: '$ 522',
     street: 'Street No 546 Yahuu Road New Delhi',
     services: ['🛏️ 2', '🚿 23 ', '📏 123 m'],
-    image:
-      'https://thumbs.dreamstime.com/b/classic-house-flower-garden-751996.jpg',
+    image: House,
   },
   {
     topButtons: [
@@ -34,8 +34,7 @@ export const cardData = [
     price: '$ 522',
     street: 'Street No 546 Yahuu Road New Delhi',
     services: ['🛏️ 2', '🚿 23 ', '📏 123 m'],
-    image:
-      'https://thumbs.dreamstime.com/b/classic-house-flower-garden-751996.jpg',
+    image: House,
   },
   {
     topButtons: [
@@ -53,8 +52,7 @@ export const cardData = [
     price: '$ 522',
     street: 'Street No 546 Yahuu Road New Delhi',
     services: ['🛏️ 2', '🚿 23 ', '📏 123 m'],
-    image:
-      'https://thumbs.dreamstime.com/b/classic-house-flower-garden-751996.jpg',
+    image: House,
   },
   {
     topButtons: [
@@ -72,7 +70,6 @@ export const cardData = [
     price: '$ 522',
     street: 'Street No 546 Yahuu Road New Delhi',
     services: ['🛏️ 2', '🚿 23 ', '📏 123 m'],
-    image:
-      'https://thumbs.dreamstime.com/b/classic-house-flower-garden-751996.jpg',
+    image: House,
   },
 ];

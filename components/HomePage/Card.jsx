@@ -10,7 +10,7 @@ const Card = ({ topButtons, price, street, services, image }) => {
   return (
     <div className='pb-3 shadow-2xl rounded-[26px]'>
       <div className='relative'>
-        <img className='w-[100%] rounded-[26px]' src={image} alt={image} />
+        <Image className='w-[100%] rounded-[26px]' src={image} alt={image} />
         <div className='absolute top-2 left-2'>
           <div className='flex h-12 '>
             <div className='flex'>
@@ -23,9 +23,19 @@ const Card = ({ topButtons, price, street, services, image }) => {
               className='bg-white m-2 rounded-md'
               onClick={() => setHeart(!heart)}>
               {heart && heart ? (
-                <Image height={'30px'} width={'30px'} src={BlackHeart} />
+                <Image
+                  height={'30px'}
+                  width={'30px'}
+                  src={BlackHeart}
+                  alt={'img'}
+                />
               ) : (
-                <Image height={'30px'} width={'30px'} src={RedHeart} />
+                <Image
+                  height={'30px'}
+                  width={'30px'}
+                  src={RedHeart}
+                  alt={'img'}
+                />
               )}
             </div>
           </div>
@@ -36,7 +46,7 @@ const Card = ({ topButtons, price, street, services, image }) => {
         <p className='text-lg py-2'>{street}</p>
         <div className='flex justify-between gap-3'>
           {services &&
-            services.map((service, i) => <Services service={service} />)}
+            services.map((service, i) => <Services key={i} service={service} />)}
         </div>
       </div>
     </div>
